@@ -1,0 +1,87 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.navbar {
+  background-color: dodgerblue;
+  padding:20px;
+
+  &_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_logo {
+    width: 50px;
+  }
+  &_list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    &_item {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: aliceblue;
+        font-size: 25px;
+    }
+  }
+  &_buttons{
+    display: flex;
+    gap: 10px;
+       
+  }
+   &_button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 17px;
+    border:none;
+   }
+}
+.card{
+  width: 600px;
+  height: 500px;
+  margin: 3rem auto;
+  padding: 20px;
+  background-color: dodgerblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &_title{
+    font-size: 30px;
+    color: aliceblue;
+    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 6px;
+
+  }
+  &_img{
+    
+      width: 200px;
+      user-select: none;
+  }
+  &_price{
+    color:whitesmoke;
+    user-select: none;
+
+  }
+  &_counter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 2rem;
+    color: antiquewhite;
+    user-select: none;
+
+  }
+
+}
